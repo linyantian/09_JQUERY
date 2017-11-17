@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="../css/jquery.wysiwyg.css">
+ </head>
+ <body>
+   <textarea id="wysiwyg" cols="80" rows="5"></textarea>
+	 <input type="button" value="保存">
+	 <script src="js/jquery.js"></script>
+	 <script src="../js/jquery.wysiwyg.js"></script>
+	 <script src="../js/wysiwyg.image.js"></script>
+	 <script src="../js/wysiwyg.link.js"></script>
+	 <script src="../js/wysiwyg.table.js"></script>
+   <script>
+	   $("#wysiwyg").wysiwyg({
+			autoGrow: true,
+			maxHeight: 600,
+			control:{html  : { visible: true }}
+		});
+		$(":buttton").click(()=>{
+		  $.ajax({
+			  url:"data/wysiwyg.php",
+				data:{
+				  content:$("#wysiwyg").wysiwyg("getContent")
+				}
+			})
+		})
+	 </script>
+ </body>
+</html>

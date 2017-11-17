@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/register.css">
+ </head>
+ <body>
+  <div class="main">
+  	<header id="header">
+  		<!--<iframe src="header_2.html" frameborder="0"></iframe>-->	
+  	</header>
+		<div class="content clear">
+			<div class="form-border">
+			  <img src="img/register/registerWord.png">
+				<p>教育行业的信息化解决方案</p>
+				<a href="#" class="email">电子邮箱注册</a> <a href="#" class="phone">手机号码注册</a>
+				<form action="data/user/register.php" method="post">
+					<input type="email" name="email" id="email" placeholder="请输入电子邮箱"   /><br/>
+					<span id="email-show"></span><br>
+					<input type="password" name="upwd" id="upwd" placeholder="请输入密码"/><br/>
+					<input type="password" id="cpwd" placeholder="再次输入密码"  /><br/>
+					<span id="cpwd-show"></span><br>
+					<input type="text" placeholder="请输入验证码" class="testCode"/><br/>
+					<button type="submit" id="btn1">注册</button>
+					<div>
+						已有账号？<a href="#">直接登录 »</a>
+					</div>			
+				</form>
+			</div>
+			<div class="img-border">
+				<img src="img/register/map.png">
+			</div>
+		</div>
+		<footer id="footer">
+			<!--<iframe src="footer_2.html" frameborder="0"></iframe>-->
+		</footer>
+  </div>
+	<script src="js/myQuery.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/header_2.js"></script>
+	<script src="js/footer_2.js"></script>
+	<!-- <script src="js/common.js"></script>
+	  <script src="js/register.js"></script> -->
+	<script src="js/jquery-3.2.1.js"></script>
+  <script src="js/register.jq.js"></script>
+
+
+ </body>
+</html>

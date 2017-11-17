@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+		    <button>click me!</button>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script>
+				  
+
+					$("button").click(()=>{
+//            $.getJSON("http://localhost/09 JQUERY/day05/data/03_welcome/i18n_msg.php?callback=?",data=>{
+//						  console.log(data);
+//						});
+
+//					  $.ajax({
+//						  type:"GET",
+//							url:"http://localhost/09 JQUERY/day05/data/03_welcome/i18n_msg.php",
+//							success:data=>{
+//							  console.log(data);
+//							},
+//							dataType:"jsonp"
+//						})
+             
+						 $("body").append('<script src="http://localhost/09 JQUERY/day05/data/03_welcome/i18n_msg.php"><\/script>');
+					})
+        </script>
+ 				<script src="js/test.js"></script> 
+ 				<script src="http://localhost/09 JQUERY/day05/data/03_welcome/i18n_msg.php"></script> 
+    </body>
+</html>

@@ -1,0 +1,77 @@
+div.main{
+  background-color:#FAFAFC;
+}
+div.main>div{
+  border-top:1px solid #E5E5E5;
+  width:1170px;
+  margin:0 auto;
+}
+
+#foot-list{
+  padding-left:150px;
+  padding-top:30px;
+  padding-bottom:60px;
+  height:176px; 
+  overflow:hidden;
+}
+#foot-list>ul{
+  float:left;
+}
+#foot-list>ul>li{
+  float:left;
+  padding-right:160px;
+}
+#foot-list>ul>li.contact{
+  padding-left:50px;
+}
+#foot-list>ul>li dl{
+  width:66px;
+}
+#foot-list>ul>li dt{
+  border-bottom:1px solid #fff;
+  padding-bottom:5px;
+  margin-bottom:10px;
+  font-size:14px;
+  font-weight:bold;
+}
+#foot-list>ul>li dd{
+  height:30px;
+  line-height:30px;
+  width:82px;
+}
+#foot-list>ul>li dd.ewm>img{
+  position:relative;
+  top:-60px;
+  left:60px;
+  display:none;
+}
+#foot-list>ul>li a{
+  font-size:14px;
+}
+#foot-list>ul>li a:hover{
+  text-decoration:underline;
+}
+#foot-list>ul h3{
+  margin-bottom:20px;
+}
+#foot-list span.phoneNum{
+  color:#1193f5;
+  font-size:21px;
+  display:inline-block;
+  margin-bottom:20px;
+}
+#foot-copy{
+  background-color:#FAFAFC;
+  height:35px;
+  line-height:35px;
+  overflow:hidden;
+}
+#foot-copy>p{
+  float:left;
+}
+#foot-copy>p.p-left{
+  padding-left:60px;
+}
+#foot-copy>p.p-right{
+  padding-left:475px;
+}

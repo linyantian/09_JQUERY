@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title>...</title>
+ <style>
+	 .btn-group{list-style:none;}
+	 .btn-group>.btn-item{
+	   float:left;display:inline-block;
+		 width:50px;height:50px;
+		 border:2px solid #555;
+		 line-height:50px;
+		 text-align:center;
+	 }
+/*	 .btn-group>.btn-item:first-child{border-radius:10px 0 0 10px;}*/
+/*	 .btn-group>.btn-item:last-child{border-radius:0 10px 10px 0;}*/
+/*	 .btn-group>.btn-item:first-child~*{border-left:0;}*/
+   table{text-align:center;border-collapse:collapse;}
+	 table>thead>tr>th{border-bottom:4px solid #000;}
+ </style>
+</head>
+<body>
+  <h1>实现按钮组效果</h1>
+  <ul id="my-btn-group" class="btn-group">
+	  <li class="btn-item">|<</li>
+	  <li class="btn-item">▶</li>
+	  <li class="btn-item">||</li>
+	  <li class="btn-item">>|</li>
+	</ul>
+	<div style="clear:both"></div>
+  <script src="js/jquery-1.11.3.js"></script>
+	<script>
+	  $(".btn-group>.btn-item:first").css("border-radius","10px 0 0 10px").css("background","lightblue");
+	  $(".btn-group>.btn-item:last").css("border-radius","0 10px 10px 0").css("background","lightblue");
+	  $(".btn-group>.btn-item:gt(0)").css("border-left","0");
+		$(".btn-group>.btn-item:eq(1)").css("background","orange")
+		$(".btn-group>.btn-item:eq(2)").css("background","orange")
+	</script>
+	<h1>实现表格隔行变色效果</h1>
+<!-- 	table>(thead>tr>th*4)+(tbody>tr*4>th*4)	 -->
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Last Name</th>
+				<th>First Name</th>
+				<th>userName</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>旭</td>
+				<td>赵</td>
+				<td>@大旭</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>东</td>
+				<td>张</td>
+				<td>@东哥</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>涛</td>
+				<td>程</td>
+				<td>@涛哥</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>#</td>
+				<td>黑</td>
+				<td>@黑胖子</td>
+			</tr>
+		</tbody>
+	</table>
+	<script>
+	  $("table>tbody>tr:gt(0)").css("borderTop","2px solid #000")
+		$("table>tbody>tr:odd").css("background","lightblue")
+	</script>
+</body>
+</html>

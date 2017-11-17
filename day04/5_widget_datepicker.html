@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+ </head>
+ <body>
+  <h1>jQueryUI：Widgets —— Datepicker</h1>
+  生日：<input id="birth">
+	入职时间：<input type="date">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+	  $("#birth").datepicker({
+		  changeYear:true,
+			changeMonth:true,
+			dateFormat:"yy年mm月dd日",
+			monthNamesShort:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+			dayNamesMin:["日","一","二","三","四","五","六"]
+		});
+	</script>
+ </body>
+</html>

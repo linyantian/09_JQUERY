@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+<body>
+<div class="container">
+  <h1>我的购物车</h1>
+  <button class="btn btn-success" id="bt-add">添加新的商品</button>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+      <th>单价</th>
+      <th>数量</th>
+      <th>小计</th>
+      <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+		<!--
+    
+		-->
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="4" class="text-right">总计：<span id="total">0</span></td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/myLib.js"></script>
+<script>
+  /*//为id为bt-add的按钮添加单击事件
+	$("#bt-add").click(e=>{
+    //随机生成单价
+		var price=parseFloat(Math.random()*10).toFixed(2);
+		console.log(price);
+    //随机生成数量
+		var count=parseInt(Math.random()*10);
+		console.log(count);
+    //计算小计
+		var total=parseFloat(price*count);
+    console.log(total);
+    //将数量，单价和小计拼接为一行，追加到tbody下
+		$("tbody")[0].append("<tr><td>"+price+"</td><td>"+count+"</td><td>"+"小计"+"</td></tr>")
+    //查找tbody中每行的小计，汇总成总计保存到tfoot中(利用myLib.js中的sum)
+  })
+  //为tbody添加单击事件委托，值允许class为close的元素响应事件
+    //删除当前元素所在行*/
+
+		var $tbody=$("table>tbody"),$total=$("#total");
+    $("#bt-add").click(()=>{
+		  var price=parseFloat(Math.random()*20+1).toFixed(2);
+			$tbody.prepend(`//tbody中追加行
+			  <tr>
+          <td>¥${price}</td>
+          <td>
+			      <button>-</button>
+			      <span>1</span>
+				    <button>+</button>
+			    </td>
+          <td>¥${price}</td>
+          <td><span class="close">×</span></td>
+        </tr>
+			`);
+			$total.html(`¥${//总价求和
+			  $("tbody td:nth-child(3)").sum().toFixed(2)
+			}`)
+		})
+
+		$tbody.on("click",".close",e=>{//删除
+		  if(confirm("是否继续删除?"))
+			  $(e.target).parent().parent().remove()
+		}).on("click","td:nth-child(2)>button",e=>{//+-按钮
+		  var $btn=$(e.target),
+			    $span=$btn.siblings("span");
+			var n=$span.html();
+			if($btn.html()=="+") n++;
+			else if(n>1) n--;
+			$span.html(n);
+			var subTotal=$btn.parent().prev().html().slice(1)*n;
+			$btn.parent().next().html(//小计
+			  `¥${subTotal.toFixed(2)}`);
+			$total.html(`¥${
+			  $("tbody td:nth-child(3)").sum().toFixed(2)
+			}`)
+		})
+</script>
+</body>
+</html>

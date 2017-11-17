@@ -1,0 +1,44 @@
+div.foot{
+  background-color:#F2F2F2;
+}
+div.foot>div{
+  border-top:1px solid #E5E5E5;
+}
+
+#foot-list{
+  padding-left:190px;
+  padding-top:30px;
+  padding-bottom:18px;
+  width:1110px;
+  margin:0 auto;
+/*   height:214px; */
+  overflow:hidden;
+}
+#foot-list>ul{
+  float:left;
+  padding-right:74px;
+}
+#foot-list>ul:last-child{
+  padding-left:80px;
+  padding-right:0;
+}
+#foot-list li.ewm{position:relative;}
+#foot-list li.ewm>img{position:absolute;top:-70px;left:70px;display:none;}
+#foot-list li{
+  line-height:30px;
+}
+#foot-list li>h3{
+  padding-bottom:15px;
+}
+#foot-list li>a{
+  font-size:14px;
+}
+#foot-list span.phoneNum{
+  color:#1193f5;
+  font-size:18px;
+}
+#foot-copy{
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:10px;
+}

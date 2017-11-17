@@ -1,0 +1,106 @@
+#header iframe{
+  width:100%;
+  height:60px;
+}
+#header{
+  height:60px;
+}
+#footer iframe{
+  width:100%;
+  height:292px;
+}
+
+/* 产品版本选择区域 */
+#products{
+  background-color:#F5F5F5;
+  width:1170px;
+  margin:0 auto 30px;
+  padding-top:30px;
+  padding-bottom:20px;
+}
+#products>div{
+  float:left;
+}
+#preview{padding:0 20px;}
+#preview>img{
+  margin-top:20%;
+  margin-left:5%;
+}
+#show-details{
+  padding-left:15px;
+  padding-right:15px;
+  margin-left:65px;
+}
+#show-details>h1{margin-top:20px;margin-bottom:10px;}
+#show-details>p{margin-bottom:10px;font-size:16px;color:#676767;}
+#show-details>div.share{border-bottom:1px solid #ccc;padding-bottom:3px;}
+#show-details>div.share>a:first-child{
+  font-size:15px;
+  color:#337ab7;
+  width:250px;
+  display:inline-block;
+}
+#show-details>div.version{width:530px;border-bottom:1px solid #ccc;padding-bottom:24px;}
+#show-details>div.version>p{margin:20px 0 10px;font-size:16px;}
+#show-details>div.version>a{
+  width:140px;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  background:#fff;
+  display:inline-block;
+  font-size:18px;
+  color:#333;
+  margin-right:25px;
+  box-shadow:3px 3px 5px #ddd;
+  letter-spacing:2px;
+}
+#show-details>div.version>a:nth-child(8){margin-top:25px;}
+#show-details>div.version>a.lp{width:180px;text-align:left;}
+#show-details>div.version>a>img{position:relative;top:-2px;/* margin-right:10px; */}
+#total-price{
+  font-size:18px;
+  margin:10px 0 10px;
+}
+#p1-price{
+  color:red;
+  font-size:26px;
+  font-weight:bold;
+}
+#cart>a{
+  display:inline-block;
+  width:155px;
+  height:50px;
+  background-color:#F0AD4E;
+  color:#fff;
+  font-size:18px;
+  letter-spacing:2px;
+  border-radius:5px;
+  margin-left:10px;
+  text-align:center;
+  line-height:50px;
+}
+#cart>a:last-child{background-color:#C9302C;}
+
+/* 产品图文与参数区域 */
+div.details{
+  width:1170px;
+  margin:0 auto 30px;
+  text-align:center;
+}
+div.details>p>a{
+  float:left;
+  display:inline-block;
+  width:50%;
+  background-color:#3f91dc;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  color:#fff;
+  font-size:18px;
+  border-bottom:2px solid #ccc;
+}
+div.details>p>a:last-child{
+  background-color:#fff;
+  color:#333;
+}

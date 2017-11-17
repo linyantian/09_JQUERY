@@ -1,0 +1,40 @@
+#header-top{background-color:#27303F;}
+#list{
+  height:60px;
+  overflow:hidden;
+  width:1170px;
+  margin:0 auto;
+}
+#list>li{
+    float:left;
+	height:60px;
+}
+#list>li:first-child{
+  line-height:40px;
+}
+#list>li>h2{
+  font-weight:normal;
+}
+#list>li a{
+  color:#fff;
+  font-size:16px;
+  display:inline-block;
+  padding:20px 15px;
+  height:60px;
+  box-sizing:border-box;
+}
+#list>li>a{
+  padding:0;
+  vertical-align:middle;
+  width:420px;
+  height:21px;
+}
+img.logo{
+    width:120px;
+	margin-left:90px;
+	margin-right:220px;
+	margin-top:-5px;
+}
+img.index-user{
+    width:20px;
+}

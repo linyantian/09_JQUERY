@@ -1,0 +1,30 @@
+/*设置通用样式*/
+body{
+    font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#333;
+    margin:0;
+    padding:0;
+    background-color:#fff;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+a{/*设置 页面中  a元素的默认样式*/
+  color:#666;
+  text-decoration:none;
+}
+a:hover{
+  color:#23527c;
+}
+img{
+  vertical-align:middle;
+}
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.lf { float:left;}
+.rt { float:right;}

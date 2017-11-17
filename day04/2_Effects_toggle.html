@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<style>
+		.box {
+			border: 1px solid #aaa;
+			background: #eee;
+			color: #333;
+			padding: 10px;
+			border-radius: 4px;
+			width: 200px;
+		}
+	</style>
+ </head>
+ <body>
+  <h1>jQueryUI-Effects</h1>
+	<button id="bt1">新的动画特效</button>
+  
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae autem sint asperiores accusamus aliquid inventore atque qui aperiam incidunt ea tenetur quae doloremque dicta minima natus ipsum doloribus iste nam.
+	</div>
+  <!--强调：因为在jqueryui中用到了jquery，所以先引入jquery，再引入jqueryui-->
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script>
+	  $("#bt1").click(()=>{
+			if($(".box").is(":not(:animated)"))
+		    $(".box").toggle("explode",2000)
+		})
+  </script>
+
+ </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+	<style>
+		#d1{
+			border:1px solid #aaa;
+			border-radius:6px;
+			background:#eee;
+			width:50px; height:50px;
+			position:absolute; top:120px; left:0;
+		}
+	</style>
+ </head>
+ <body>
+	<h1>animate</h1>
+	<button id="btn1">启动动画</button>
+	<button id="btn2">停止动画</button>
+	<div id="d1">abcd</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		//测试animate支持哪些属性
+		$("#btn1").click(()=>{
+		  $("#d1").animate({
+			  //width:200,height
+				//left:200,right
+				//opacity:0
+				//padding:100,margin
+        //borderWidth:20
+				//fontSize:"5em"
+				//borderRadius:20
+
+				//不支持backgroundColor:"red"
+				//transform:"rotate(360deg)"
+			},2000)
+		})
+    //测试启动和停止动画
+    //测试延迟执行
+	</script>
+ </body>
+</html>

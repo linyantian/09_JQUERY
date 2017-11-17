@@ -1,0 +1,107 @@
+div.bg{
+  height:680px;
+  background:url('../img/solution/banner3.jpg') no-repeat top center;
+  text-align:center;
+}
+#header>ul{width:1170px;margin:0 auto;padding-top:30px;padding-left:280px;}
+#header>ul>li{
+  float:left;
+  line-height:50px;
+}
+#header>ul>li:first-child{padding-right:110px;}
+#header a{
+  color:#fff;
+  font-size:18px;
+  opacity:0.7;
+  line-height:20px;
+  padding:10px 15px;
+}
+#header a.logo{opacity:1;}
+div.bg>h1{
+  color:#fff;
+  font-size:48px;
+  font-weight:500;
+  margin-top:210px;
+  margin-bottom:35px;
+  letter-spacing:5px;
+}
+div.bg>h2{
+  color:#fff;
+  font-size:20px;
+  font-weight:500;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+div.fangan{
+  width:877px;
+  height:346px;
+  margin:80px auto 110px;
+}
+div.fangan>ul h2{
+  color:#0068B7;
+  font-size:30px;
+  margin-top:20px;
+  margin-bottom:10px;
+  font-weight:500;
+  text-align:center;
+}
+div.fangan>ul p{
+  color:#737b8a;
+  font-size:16px;
+  margin:0 auto 10px;
+  text-align:center;
+}
+div.fangan>ul>li{
+  float:left;
+  padding:0 30px;
+}
+div.fangan>ul>li:first-child{margin-right:60px;}
+div.pics{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+div.pics img{border:1px solid #ccc;margin-bottom:20px;}
+
+div.footer{
+  height:232px;
+  background:url('../img/solution/f.jpg') no-repeat top center;
+}
+ul.contact{
+  width:770px;
+  padding:50px;
+  margin:0 auto;
+  color:#fff;
+  opacity:0.8;
+}
+ul.contact li{float:left;padding-left:15px;padding-right:20px;}
+ul.contact li:first-child{margin-right:180px;}
+div.footer ul.contact h3{
+  font-size:20px;
+  width:120px;
+  margin-top:20px;
+  margin-bottom:10px;
+  padding-bottom:5px;
+  letter-spacing:3px;
+  border-bottom:1px solid #fff;
+}
+div.footer ul.contact p{
+  font-size:14px;
+  letter-spacing:1px;
+  margin:0 0 10px;
+}
+div.footer ul.contact p.rt{text-align:right;}
+ul.contact h4{
+  font-size:16px;
+  margin-top:20px;
+  margin-bottom:7px;
+  font-weight:500;
+  text-align:right;
+}
+ul.contact a{
+  font-size:16px;
+  color:#217fd7;
+  text-align:right;
+}

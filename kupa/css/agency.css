@@ -1,0 +1,39 @@
+body{background:#F2F2F2;}
+#header iframe{
+  width:100%;
+  height:60px;
+}
+#header{
+  height:60px;
+}
+#footer iframe{
+  width:100%;
+  height:292px;
+}
+
+div.agency{
+  width:925px;
+  height:460px;
+  margin:0 auto 40px;
+  padding-left:40px;
+  padding-right:20px;
+  background:#fff;
+}
+div.agency>p.agency-title{
+  font-size:26px;
+  text-align:center;
+  line-height:70px;
+}
+div.agency>p.agency-introduce{
+  width:906px;
+  font-size:16px;
+  text-indent:2em;
+  line-height:2em;
+  color:#51555C;
+}
+div.agency>h3.agency-contact{
+  font-size:16px;
+  height:30px;
+  margin-top:20px;
+  margin-bottom:10px;
+}
